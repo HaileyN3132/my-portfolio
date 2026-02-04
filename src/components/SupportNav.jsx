@@ -7,6 +7,7 @@ export default function SupportNav({ tagInfo }) {
       name={tag.name}
       src={tag.src}
       isHidden={tag.isHidden}
+      isClickable={tag.isClickable}
     />
   ));
 

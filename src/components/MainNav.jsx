@@ -7,6 +7,8 @@ export default function MainNav({ tagInfo }) {
       name={tag.name}
       src={tag.src}
       isHidden={tag.isHidden}
+      isClickable={tag.isClickable}
+      isScale={tag.isScale}
     />
   ));
 

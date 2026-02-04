@@ -8,9 +8,25 @@ export const tagData = [
     page: "about",
     locate: "right",
     order: [
-      { name: "About Me Button", src: AboutMeTag, isHidden: false },
-      { name: "Projects Button", src: ProjectsTag, isHidden: true },
-      { name: "Contact Button", src: ContactTag, isHidden: true },
+      {
+        name: "About Me Button",
+        src: AboutMeTag,
+        isClickable: true,
+        isHidden: false,
+        isScale: true,
+      },
+      {
+        name: "Projects Button",
+        src: ProjectsTag,
+        isClickable: true,
+        isHidden: true,
+      },
+      {
+        name: "Contact Button",
+        src: ContactTag,
+        isClickable: true,
+        isHidden: true,
+      },
     ],
   },
 

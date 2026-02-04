@@ -1,4 +1,10 @@
-export default function TagBtn({ name, src, isHidden }) {
+export default function TagBtn({
+  name,
+  src,
+  isHidden,
+  isClickable,
+  isScale = false,
+}) {
   function handleClick() {
     console.log(`${name} clicked!`);
   }
@@ -8,9 +14,13 @@ export default function TagBtn({ name, src, isHidden }) {
       <button
         onClick={handleClick}
         className={
-          isHidden
-            ? "invisible"
-            : "visible cursor-pointer hover:scale-105 transition-transform"
+          isClickable
+            ? isHidden
+              ? "opacity-0 cursor-pointer"
+              : isScale
+                ? "visible cursor-pointer hover:scale-105 transition-transform"
+                : "visible cursor-pointer"
+            : "invisible"
         }
       >
         <img className="w-[180px]" src={src} alt={name} />
