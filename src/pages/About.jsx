@@ -3,15 +3,21 @@ import CoverBack from "../components/CoverBack";
 import PageFront from "../components/PageFront";
 import PageBack from "../components/PageBack";
 import MainNav from "../components/MainNav";
+import SupportNav from "../components/SupportNav";
 
 import AboutMeTag from "../assets/img/AboutMeTag.svg";
 import ProjectsTag from "../assets/img/ProjectsTag.svg";
 import ContactTag from "../assets/img/ContactTag.svg";
 
-import { tagsData } from "../data/MainNav";
+import { tagData } from "../data/MainNav";
+import { tagSupportData } from "../data/SupportNav";
 
 export default function About() {
-  const tagTarget = tagsData.filter(
+  const tagSupportTarget = tagSupportData.filter(
+    (tag) => tag.page === "projects" && tag.locate === "left",
+  );
+
+  const tagTarget = tagData.filter(
     (tag) => tag.page === "about" && tag.locate === "right",
   );
 
@@ -19,7 +25,12 @@ export default function About() {
     <>
       <div className="flex justify-center mb-[34px] mt-[34px]">
         <CoverFront>
-          <PageFront isHidden />
+          <SupportNav tagInfo={tagSupportTarget[0]} />
+          <PageFront>
+            <MainNav tagInfo={tagTarget[0]} />
+            <section className="flex-1">Section 3</section>
+            <section className="flex-1">Section 4</section>
+          </PageFront>
         </CoverFront>
 
         <CoverBack>
