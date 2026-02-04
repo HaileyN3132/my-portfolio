@@ -8,7 +8,13 @@ import AboutMeTag from "../assets/img/AboutMeTag.svg";
 import ProjectsTag from "../assets/img/ProjectsTag.svg";
 import ContactTag from "../assets/img/ContactTag.svg";
 
+import { tagsData } from "../data/MainNav";
+
 export default function About() {
+  const tagTarget = tagsData.filter(
+    (tag) => tag.page === "about" && tag.locate === "right",
+  );
+
   return (
     <>
       <div className="flex justify-center mb-[34px] mt-[34px]">
@@ -29,7 +35,7 @@ export default function About() {
             </button>
           </div>
           <PageBack>
-            <MainNav />
+            <MainNav tagInfo={tagTarget[0]} />
             <section className="flex-1">Section 1</section>
             <section className="flex-1">Section 2</section>
           </PageBack>

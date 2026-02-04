@@ -1,19 +1,18 @@
-import AboutMeTag from "../assets/img/AboutMeTag.svg";
-import ProjectsTag from "../assets/img/ProjectsTag.svg";
-import ContactTag from "../assets/img/ContactTag.svg";
+import TagBtn from "./buttons/TagBtn";
 
-export default function MainNav() {
+export default function MainNav({ tagInfo }) {
+  let tagsList = tagInfo.order.map((tag) => (
+    <TagBtn
+      key={tag.name}
+      name={tag.name}
+      src={tag.src}
+      isHidden={tag.isHidden}
+    />
+  ));
+
   return (
     <nav className="-mt-13 flex justify-center gap-8 w-[644.91px] h-[63px]">
-      <button>
-        <img src={AboutMeTag} className="w-[180px]" />
-      </button>
-      <button>
-        <img src={ProjectsTag} className="w-[180px]" />
-      </button>
-      <button>
-        <img src={ContactTag} className="w-[180px]" />
-      </button>
+      {tagsList}
     </nav>
   );
 }
