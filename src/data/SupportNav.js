@@ -11,6 +11,7 @@ export const tagSupportData = [
       {
         name: "About Me Button",
         src: AboutMeTag,
+        path: "/about",
         isClickable: false,
         isHidden: false,
       },
@@ -18,11 +19,13 @@ export const tagSupportData = [
       {
         name: "Projects Button",
         src: ProjectsTag,
+        path: "/projects",
         isClickable: true,
         isHidden: false,
       },
       {
         name: "Contact Button",
+        path: "/contact",
         src: ContactTag,
         isClickable: true,
         isHidden: false,
@@ -37,18 +40,21 @@ export const tagSupportData = [
     order: [
       {
         name: "Contact Button",
+        path: "/contact",
         src: ContactTag,
         isClickable: false,
-        isHidden: true,
+        isHidden: false,
       },
       {
         name: "Projects Button",
+        path: "/projects",
         src: ProjectsTag,
         isClickable: false,
         isHidden: false,
       },
       {
         name: "About Me Button",
+        path: "/about",
         src: AboutMeTag,
         isClickable: true,
         isHidden: false,

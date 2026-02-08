@@ -5,6 +5,7 @@ export default function SupportNav({ tagInfo }) {
     <TagBtn
       key={tag.name}
       name={tag.name}
+      path={tag.path}
       src={tag.src}
       isHidden={tag.isHidden}
       isClickable={tag.isClickable}

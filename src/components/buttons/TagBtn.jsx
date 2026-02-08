@@ -1,6 +1,9 @@
+import { NavLink } from "react-router";
+
 export default function TagBtn({
   name,
   src,
+  path,
   isHidden,
   isClickable,
   isScale = false,
@@ -11,7 +14,8 @@ export default function TagBtn({
 
   return (
     <>
-      <button
+      <NavLink
+        to={path}
         onClick={handleClick}
         className={
           isClickable
@@ -24,7 +28,7 @@ export default function TagBtn({
         }
       >
         <img className="w-[180px]" src={src} alt={name} />
-      </button>
+      </NavLink>
     </>
   );
 }

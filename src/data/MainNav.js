@@ -10,6 +10,7 @@ export const tagData = [
     order: [
       {
         name: "About Me Button",
+        path: "/about",
         src: AboutMeTag,
         isClickable: true,
         isHidden: false,
@@ -17,12 +18,14 @@ export const tagData = [
       },
       {
         name: "Projects Button",
+        path: "/projects",
         src: ProjectsTag,
         isClickable: true,
         isHidden: true,
       },
       {
         name: "Contact Button",
+        path: "/contact",
         src: ContactTag,
         isClickable: true,
         isHidden: true,
