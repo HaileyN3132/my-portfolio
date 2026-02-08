@@ -2,7 +2,11 @@ import AboutMeTag from "../assets/img/AboutMeTag.svg";
 import ProjectsTag from "../assets/img/ProjectsTag.svg";
 import ContactTag from "../assets/img/ContactTag.svg";
 
+import { useNavigate } from "react-router";
+
 export default function Home() {
+  let navigate = useNavigate();
+
   return (
     /*
     <>
@@ -33,7 +37,10 @@ export default function Home() {
           </section>
           <section className="flex flex-1 justify-end items-center">
             <div className="shadow-[0_8px_10px_0_rgba(0,0,0,0.25)] flex justify-end items-center w-[189px] h-[69px] bg-[#FEFCF3] rounded-tl-full rounded-bl-full">
-              <button className="flex items-center w-[178px] h-[48px] border-r-0 border-3 border-dashed border-gray-400 bg-transparent border rounded-tl-full rounded-bl-full">
+              <button
+                onClick={() => navigate("/about")}
+                className="flex items-center w-[178px] h-[48px] border-r-0 border-3 border-dashed border-gray-400 bg-transparent border rounded-tl-full rounded-bl-full"
+              >
                 <div className="cursor-pointer rounded-full w-6 h-6 bg-[#A18066] m-2"></div>
               </button>
             </div>
