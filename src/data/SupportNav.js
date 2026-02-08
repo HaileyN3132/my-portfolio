@@ -33,6 +33,35 @@ export const tagSupportData = [
     ],
   },
 
+  {
+    page: "projects",
+    locate: "right",
+    order: [
+      {
+        name: "About Me Button",
+        src: AboutMeTag,
+        path: "/about",
+        isClickable: false,
+        isHidden: false,
+      },
+
+      {
+        name: "Projects Button",
+        src: ProjectsTag,
+        path: "/projects",
+        isClickable: false,
+        isHidden: false,
+      },
+      {
+        name: "Contact Button",
+        path: "/contact",
+        src: ContactTag,
+        isClickable: true,
+        isHidden: false,
+      },
+    ],
+  },
+
   //Left side
   {
     page: "projects",

@@ -9,15 +9,10 @@ import { tagData } from "../data/MainNav";
 import { tagSupportData } from "../data/SupportNav";
 
 export default function About() {
-  const tagSupportTarget = tagSupportData.filter(
-    (tag) => tag.page === "projects" && tag.locate === "left",
-  );
-
   return (
     <>
       <div className="flex justify-center mb-[34px] mt-[34px]">
         <CoverFront>
-          <SupportNav tagInfo={tagSupportTarget[0]} />
           <PageFront>
             <section className="flex-1">Section 3</section>
             <section className="flex-1">Section 4</section>
