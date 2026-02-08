@@ -62,6 +62,35 @@ export const tagSupportData = [
     ],
   },
 
+  {
+    page: "contact",
+    locate: "right",
+    order: [
+      {
+        name: "About Me Button",
+        src: AboutMeTag,
+        path: "/about",
+        isClickable: false,
+        isHidden: false,
+      },
+
+      {
+        name: "Projects Button",
+        src: ProjectsTag,
+        path: "/projects",
+        isClickable: false,
+        isHidden: false,
+      },
+      {
+        name: "Contact Button",
+        path: "/contact",
+        src: ContactTag,
+        isClickable: true,
+        isHidden: false,
+      },
+    ],
+  },
+
   //Left side
   {
     page: "projects",
@@ -79,6 +108,34 @@ export const tagSupportData = [
         path: "/projects",
         src: ProjectsTag,
         isClickable: false,
+        isHidden: false,
+      },
+      {
+        name: "About Me Button",
+        path: "/about",
+        src: AboutMeTag,
+        isClickable: true,
+        isHidden: false,
+      },
+    ],
+  },
+
+  {
+    page: "contact",
+    locate: "left",
+    order: [
+      {
+        name: "Contact Button",
+        path: "/contact",
+        src: ContactTag,
+        isClickable: false,
+        isHidden: false,
+      },
+      {
+        name: "Projects Button",
+        path: "/projects",
+        src: ProjectsTag,
+        isClickable: true,
         isHidden: false,
       },
       {

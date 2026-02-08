@@ -62,5 +62,34 @@ export const tagData = [
     ],
   },
 
+  {
+    page: "contact",
+    locate: "right",
+    order: [
+      {
+        name: "About Me Button",
+        path: "/about",
+        src: AboutMeTag,
+        isClickable: false,
+        isHidden: false,
+      },
+      {
+        name: "Projects Button",
+        path: "/projects",
+        src: ProjectsTag,
+        isClickable: false,
+        isHidden: false,
+      },
+      {
+        name: "Contact Button",
+        path: "/contact",
+        src: ContactTag,
+        isClickable: true,
+        isHidden: false,
+        isScale: true,
+      },
+    ],
+  },
+
   //Left side
 ];
