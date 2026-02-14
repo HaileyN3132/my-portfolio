@@ -5,6 +5,8 @@ import PageBack from "../components/PageBack";
 import MainNav from "../components/MainNav";
 import SupportNav from "../components/SupportNav";
 
+import ContactDecor from "../components/boxes/ContactDecor";
+
 import { tagData } from "../data/MainNav";
 import { tagSupportData } from "../data/SupportNav";
 
@@ -21,7 +23,9 @@ export default function Contact() {
             }
           />
           <PageFront>
-            <section className="flex-1">Section 1</section>
+            <section className="flex-1 flex justify-center">
+              <ContactDecor />
+            </section>
             <section className="flex-1">Section 2</section>
           </PageFront>
         </CoverFront>
