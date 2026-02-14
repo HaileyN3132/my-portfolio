@@ -18,6 +18,40 @@ export const profile = {
     },
     { name: "Resume", url: "https://www.google.com/", icon: icons.download },
   ],
-  frontendSkills: [],
-  backendSkills: [],
+  frontendSkills: [
+    {
+      name: "JavaScript",
+      icon: icons.javascript,
+    },
+    {
+      name: "React",
+      icon: icons.react,
+    },
+    {
+      name: "HTML",
+      icon: icons.html,
+    },
+    {
+      name: "CSS",
+      icon: icons.css,
+    },
+  ],
+  backendSkills: [
+    {
+      name: "Java",
+      icon: icons.java,
+    },
+    {
+      name: "SpringBoot",
+      icon: icons.springboot,
+    },
+    {
+      name: "Python",
+      icon: icons.python,
+    },
+    {
+      name: "NodeJS",
+      icon: icons.nodejs,
+    },
+  ],
 };
