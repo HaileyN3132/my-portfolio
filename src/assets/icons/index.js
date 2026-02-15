@@ -12,6 +12,7 @@ import springboot from "./springboot.webp";
 import python from "./python.png";
 import nodejs from "./nodejs.jpg";
 import mail from "./mail.png";
+import send from "./send.png";
 
 export const icons = {
   linkedin,
@@ -28,4 +29,5 @@ export const icons = {
   python,
   nodejs,
   mail,
+  send,
 };
