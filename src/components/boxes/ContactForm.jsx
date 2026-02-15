@@ -1,3 +1,4 @@
+import emailjs from "@emailjs/browser";
 import { icons } from "../../assets/icons";
 
 export default function ContactForm() {
@@ -6,7 +7,26 @@ export default function ContactForm() {
     const email = dataForm.get("email");
     const message = dataForm.get("message");
 
-    alert(`${name} (${email}) said "${message}"`);
+    // EmailJS info
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+    // Param
+    const templateParams = {
+      fromName: name,
+      email: email,
+      message: message,
+    };
+
+    emailjs.send(serviceId, templateId, templateParams, publicKey).then(
+      (response) => {
+        console.log("SUCCESS!", response.status, response.text);
+      },
+      (err) => {
+        console.log("FAILED...", err);
+      },
+    );
   }
 
   return (
