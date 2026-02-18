@@ -5,6 +5,11 @@ import PageBack from "../components/PageBack";
 import MainNav from "../components/MainNav";
 import SupportNav from "../components/SupportNav";
 
+import ProjectCard from "../components/boxes/ProjectCard";
+
+import CrossBtn from "../assets/img/CrossBtn.png";
+import RightBtn from "../assets/img/RightBtn.png";
+
 import { tagData } from "../data/MainNav";
 import { tagSupportData } from "../data/SupportNav";
 
@@ -21,8 +26,14 @@ export default function Projects() {
             }
           />
           <PageFront>
-            <section className="flex-1">Section 1</section>
-            <section className="flex-1">Section 2</section>
+            <section className="flex-1">
+              <div className=" flex w-full gap-20 m-10 ">
+                <ProjectCard />
+
+                <ProjectCard />
+              </div>
+            </section>
+            <section className="flex-1">Sections 2</section>
           </PageFront>
         </CoverFront>
 
@@ -42,8 +53,7 @@ export default function Projects() {
                 )[0]
               }
             />
-            <section className="flex-1">Section 3</section>
-            <section className="flex-1">Section 4</section>
+            <section className="flex-1 flex mt-[50px]"></section>
           </PageBack>
         </CoverBack>
       </div>
