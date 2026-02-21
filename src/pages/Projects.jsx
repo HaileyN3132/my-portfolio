@@ -6,6 +6,11 @@ import PageFront from "../components/PageFront";
 import PageBack from "../components/PageBack";
 import MainNav from "../components/MainNav";
 import SupportNav from "../components/SupportNav";
+import ConsoleTop from "../components/ConsoleTop";
+import ConsoleMiddle from "../components/ConsoleMiddle";
+import ConsoleBottom from "../components/ConsoleBottom";
+import ConsoleDecor from "../components/ConsoleDecor";
+import ConsoleBtn from "../components/buttons/ConsoleBtn";
 
 import ProjectCard from "../components/boxes/ProjectCard";
 import { projects } from "../data/Projects";
@@ -17,11 +22,16 @@ import { tagData } from "../data/MainNav";
 import { tagSupportData } from "../data/SupportNav";
 
 export default function Projects() {
+  const [projectSelected, setProjectSelected] = useState(undefined);
   const [projectCard, setProjectCard] = useState(projects);
+
   function update(name) {
     const newList = projects.map((project) => {
-      if (project.name === name) return { ...project, select: true };
-      else return { ...project, select: false };
+      if (project.name === name) {
+        const targetProject = { ...project, select: true };
+        setProjectSelected(targetProject);
+        return targetProject;
+      } else return { ...project, select: false };
     });
     setProjectCard(newList);
   }
@@ -69,7 +79,52 @@ export default function Projects() {
                 )[0]
               }
             />
-            <section className="flex-1 flex mt-[50px]"></section>
+            <section className="flex-1 flex mt-[50px]">
+              <div className="border border-red-700 flex flex-col w-full items-center">
+                <ConsoleTop projectSelected={projectSelected} />
+
+                <ConsoleMiddle />
+
+                <ConsoleBottom>
+                  <ConsoleDecor
+                    style="flex-1 flex justify-center items-center h-[196.22px]"
+                    img={CrossBtn}
+                    decorName="Cross Button"
+                  />
+
+                  {projectSelected ? (
+                    <div className="bg-white w-[287.79px] h-[196.22px]">
+                      <img
+                        className="w-full h-full object-contain border"
+                        src={projectSelected.src}
+                      />
+                    </div>
+                  ) : (
+                    <div className="bg-gray-500 w-[287.79px] h-[196.22px]"></div>
+                  )}
+
+                  <div className=" flex-1 flex flex-col justify-center items-center h-[196.22px]">
+                    <ConsoleDecor
+                      style="flex-1 pt-12 flex items-center"
+                      img={RightBtn}
+                      decorName="Right Buttons"
+                    />
+
+                    <div className="flex flex-col gap-2">
+                      <ConsoleBtn
+                        btnName="Github"
+                        link="https://www.google.com/"
+                      />
+
+                      <ConsoleBtn
+                        btnName="Demo"
+                        link="https://www.youtube.com/"
+                      />
+                    </div>
+                  </div>
+                </ConsoleBottom>
+              </div>
+            </section>
           </PageBack>
         </CoverBack>
       </div>
