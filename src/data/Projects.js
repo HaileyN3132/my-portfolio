@@ -4,8 +4,8 @@ export const projects = [
   {
     name: "Interactive portfolio",
     img: projectImg.project1,
-    techUsed: ["React", "TailwindCSS", "JavaScript", "Figma", "Git"], // array of strings
-    discription: "",
+    techUsed: ["React", "TailwindCSS", "JavaScript", "Figma", "Github"], // array of strings
+    discription: " ",
     select: false,
   },
   {
