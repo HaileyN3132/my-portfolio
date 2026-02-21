@@ -96,7 +96,7 @@ export default function Projects() {
                     <div className="bg-white w-[287.79px] h-[196.22px]">
                       <img
                         className="w-full h-full object-contain border"
-                        src={projectSelected.src}
+                        src={projectSelected.img}
                       />
                     </div>
                   ) : (
