@@ -13,6 +13,13 @@ import python from "./python.png";
 import nodejs from "./nodejs.jpg";
 import mail from "./mail.png";
 import send from "./send.png";
+import tailwindcss from "./tailwindcss.png";
+import figma from "./figma.svg";
+import firebase from "./firebase.png";
+import android from "./android.png";
+import express from "./express.png";
+import mysql from "./mysql.png";
+import mongodb from "./mongodb.svg";
 
 export const icons = {
   linkedin,
@@ -30,4 +37,11 @@ export const icons = {
   nodejs,
   mail,
   send,
+  tailwindcss,
+  figma,
+  firebase,
+  android,
+  express,
+  mysql,
+  mongodb,
 };

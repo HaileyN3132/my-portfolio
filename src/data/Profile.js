@@ -28,6 +28,14 @@ export const profile = {
       icon: icons.react,
     },
     {
+      name: "TailwindCSS",
+      icon: icons.tailwindcss,
+    },
+    {
+      name: "Figma",
+      icon: icons.figma,
+    },
+    {
       name: "HTML",
       icon: icons.html,
     },
@@ -38,8 +46,24 @@ export const profile = {
   ],
   backendSkills: [
     {
+      name: "NodeJS",
+      icon: icons.nodejs,
+    },
+    {
+      name: "ExpressJS",
+      icon: icons.express,
+    },
+    {
+      name: "MongoDB",
+      icon: icons.mongodb,
+    },
+    {
       name: "Java",
       icon: icons.java,
+    },
+    {
+      name: "Firebase",
+      icon: icons.firebase,
     },
     {
       name: "SpringBoot",
@@ -48,10 +72,6 @@ export const profile = {
     {
       name: "Python",
       icon: icons.python,
-    },
-    {
-      name: "NodeJS",
-      icon: icons.nodejs,
     },
   ],
 };

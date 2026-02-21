@@ -95,7 +95,7 @@ export default function Projects() {
 
                   {projectSelected ? (
                     <div className="bg-white flex flex-col w-[287.79px] h-[196.22px] justify-evenly">
-                      <div className=" flex w-full h-[40px] justify-center items-center">
+                      <div className=" flex w-full h-[40px] justify-center items-center gap-1">
                         {projectSelected.techUsed.map((tech) => (
                           <img
                             key={tech}
