@@ -23,8 +23,8 @@ export const projects = [
   },
   {
     name: "Study Corner",
-    img: projectImg.project2,
-    imgCover: projectImg.projectCover1,
+    img: projectImg.project3,
+    imgCover: projectImg.projectCover3,
     techUsed: ["Java", "Firebase", "Android"], // array of strings
     discription: "",
     repo: "https://github.com/HaileyN3132/Study_Corner_App",

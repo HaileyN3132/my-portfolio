@@ -50,7 +50,7 @@ export default function Projects() {
           />
           <PageFront>
             <section className="flex-1">
-              <div className=" flex w-full gap-20 m-10 ">
+              <div className=" flex flex-wrap w-full gap-30 m-10 ">
                 {projectCard.map((project) => (
                   <ProjectCard
                     key={project.name}
