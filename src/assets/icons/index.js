@@ -20,6 +20,7 @@ import android from "./android.png";
 import express from "./express.png";
 import mysql from "./mysql.png";
 import mongodb from "./mongodb.svg";
+import postman from "./postman.svg";
 
 export const icons = {
   linkedin,
@@ -44,4 +45,5 @@ export const icons = {
   express,
   mysql,
   mongodb,
+  postman,
 };

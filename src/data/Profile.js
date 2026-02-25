@@ -3,7 +3,7 @@ import { icons } from "../assets/icons";
 export const profile = {
   fullName: "Hailey Ngo",
   location: "Virginia, USA",
-  bio: "Introduction here, this is an example of how long theintroduction could be !",
+  bio: "a software developer who passionate about transforming creative ideas into real life applications.",
   profileImg: [],
   socialInfo: [
     {
@@ -16,7 +16,11 @@ export const profile = {
       url: "https://github.com/HaileyN3132",
       icon: icons.github,
     },
-    { name: "Resume", url: "https://www.google.com/", icon: icons.download },
+    {
+      name: "Resume",
+      url: "https://drive.google.com/drive/folders/1KnQ2Paj6W8OJWUSFICxHDg80SITsUAWr?usp=sharing",
+      icon: icons.download,
+    },
   ],
   frontendSkills: [
     {
@@ -54,6 +58,10 @@ export const profile = {
       icon: icons.express,
     },
     {
+      name: "Postman",
+      icon: icons.postman,
+    },
+    {
       name: "MongoDB",
       icon: icons.mongodb,
     },
@@ -68,10 +76,6 @@ export const profile = {
     {
       name: "SpringBoot",
       icon: icons.springboot,
-    },
-    {
-      name: "Python",
-      icon: icons.python,
     },
   ],
 };

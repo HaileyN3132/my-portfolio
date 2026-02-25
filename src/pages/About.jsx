@@ -14,6 +14,7 @@ import { tagSupportData } from "../data/SupportNav";
 import { profile } from "../data/Profile";
 import SocialBtn from "../components/buttons/SocialBtn";
 import { icons } from "../assets/icons";
+import artProfile from "../assets/img/artProfile.png";
 
 export default function About() {
   return (
@@ -44,18 +45,31 @@ export default function About() {
             />
             <section className="flex-1">
               <div className="flex">
-                <div className="border flex-1">Profile here</div>
+                <div className="flex w-[250px] pr-12 items-center">
+                  <img className=" w-75 h-75" src={artProfile} alt="" />
+                </div>
                 <IntroBox>
                   <nav className="flex gap-4 justify-end items-center h-[68.24px]">
                     {profile.socialInfo.map((item) => (
-                      <SocialBtn info={item} />
+                      <SocialBtn key={item.name} info={item} />
                     ))}
                   </nav>
 
                   <div className="flex flex-col ml-[17px] gap-3">
-                    <p>{profile.fullName}</p>
-                    <p>{profile.location}</p>
-                    <p>{profile.bio}</p>
+                    <p>📍{profile.location}</p>
+                    <p>Hi 👋 </p>
+                    <p>
+                      I'm{" "}
+                      <span className="font-semibold text-[#294645] underline decoration-[#8cb98b]">
+                        {profile.fullName}
+                      </span>{" "}
+                      {profile.bio}
+                    </p>
+                    <p>
+                      {
+                        "Feel free to explore my projects to see my work in action :>"
+                      }
+                    </p>
                   </div>
                 </IntroBox>
               </div>
@@ -72,7 +86,11 @@ export default function About() {
 
                   <ul className="flex flex-col w-full h-full justify-evenly pl-3 ">
                     {profile.frontendSkills.map((skill) => (
-                      <Skill techName={skill.name} icon={skill.icon} />
+                      <Skill
+                        key={skill.name}
+                        techName={skill.name}
+                        icon={skill.icon}
+                      />
                     ))}
                   </ul>
                 </SkillBox>
@@ -86,7 +104,11 @@ export default function About() {
 
                   <ul className="flex flex-col w-full h-full justify-evenly pl-3">
                     {profile.backendSkills.map((skill) => (
-                      <Skill techName={skill.name} icon={skill.icon} />
+                      <Skill
+                        key={skill.name}
+                        techName={skill.name}
+                        icon={skill.icon}
+                      />
                     ))}
                   </ul>
                 </SkillBox>
