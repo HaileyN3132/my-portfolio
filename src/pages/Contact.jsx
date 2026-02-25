@@ -27,7 +27,7 @@ export default function Contact() {
             <section className="flex-1 flex justify-center">
               <ContactDecor />
             </section>
-            <section className="flex-1">Section 2</section>
+            <section className="flex-1"></section>
           </PageFront>
         </CoverFront>
 
@@ -55,7 +55,7 @@ export default function Contact() {
                 <ContactForm />
               </div>
             </section>
-            <section className="flex-1">Section 4</section>
+            <section className="flex-1"></section>
           </PageBack>
         </CoverBack>
       </div>

@@ -8,9 +8,7 @@ export default function TagBtn({
   isClickable,
   isScale = false,
 }) {
-  function handleClick() {
-    console.log(`${name} clicked!`);
-  }
+  function handleClick() {}
 
   return (
     <>

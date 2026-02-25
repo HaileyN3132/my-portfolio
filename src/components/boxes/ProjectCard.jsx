@@ -3,7 +3,6 @@ import { projectImg } from "../../assets/img/projectPage";
 export default function ProjectCard({ project, update }) {
   function selectCard() {
     update(project.name);
-    console.log(`Project "${project.name}"" is selected`);
   }
 
   return (
