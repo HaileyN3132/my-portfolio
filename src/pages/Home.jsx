@@ -32,8 +32,9 @@ export default function Home() {
         </div>
 
         <div className="shadow-[10px_20px_35px_10px_rgba(0,0,0,0.25)] absolute mt-162 z-10 flex flex-col w-[516px] h-[669px] bg-[#294645] rounded-tl-lg rounded-bl-lg rounded-tr-4xl rounded-br-4xl">
-          <section className="flex-1">
-            <h1 className="text-white"></h1>
+          <section className="text-[#FEFCF3] font-cover flex-1 flex flex-col justify-end items-center font-semibold text-[50px]">
+            <h1 className="">Hailey's </h1>
+            <h1 className=""> Portfolio </h1>
           </section>
           <section className="flex flex-1 justify-end items-center">
             <div className="shadow-[0_8px_10px_0_rgba(0,0,0,0.25)] flex justify-end items-center w-[189px] h-[69px] bg-[#FEFCF3] rounded-tl-full rounded-bl-full">
@@ -45,9 +46,7 @@ export default function Home() {
               </button>
             </div>
           </section>
-          <section className="flex-1">
-            <h1 className="text-white"></h1>
-          </section>
+          <section className="flex-1 flex flex-col justify-start items-center font-semibold"></section>
         </div>
       </main>
     </>
