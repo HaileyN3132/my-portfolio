@@ -50,7 +50,7 @@ export default function Projects() {
           />
           <PageFront>
             <section className="flex-1">
-              <div className=" flex flex-wrap w-full gap-30 m-10 ">
+              <div className=" flex flex-wrap w-full gap-30 m-12 ">
                 {projectCard.map((project) => (
                   <ProjectCard
                     key={project.name}
@@ -60,7 +60,7 @@ export default function Projects() {
                 ))}
               </div>
             </section>
-            <section className="flex-1">Sections 2</section>
+            <section className="hidden flex-1">Sections 2</section>
           </PageFront>
         </CoverFront>
 
@@ -81,7 +81,7 @@ export default function Projects() {
               }
             />
             <section className="flex-1 flex mt-[50px]">
-              <div className="border border-red-700 flex flex-col w-full items-center">
+              <div className=" flex flex-col w-full items-center">
                 <ConsoleTop projectSelected={projectSelected} />
 
                 <ConsoleMiddle />
@@ -105,12 +105,20 @@ export default function Projects() {
                     <div className="flex flex-col gap-2">
                       <ConsoleBtn
                         btnName="Github"
-                        link="https://www.google.com/"
+                        link={
+                          projectSelected?.repo
+                            ? projectSelected.repo
+                            : "https://github.com/HaileyN3132"
+                        }
                       />
 
                       <ConsoleBtn
                         btnName="Demo"
-                        link="https://www.youtube.com/"
+                        link={
+                          projectSelected?.demo
+                            ? projectSelected.demo
+                            : "https://github.com/HaileyN3132"
+                        }
                       />
                     </div>
                   </div>

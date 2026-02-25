@@ -4,7 +4,7 @@ export default function ConsoleTop({ projectSelected }) {
       {projectSelected ? (
         <div className="bg-white w-[287.79px] h-[196.22px]">
           <img
-            className="w-full h-full object-contain border"
+            className="w-full h-full object-contain border-2 border-gray-500/80"
             src={projectSelected.imgCover}
           />
         </div>
