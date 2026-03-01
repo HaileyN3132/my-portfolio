@@ -1,16 +1,43 @@
-# React + Vite
+<h2 align="center">
+  Portfolio Website <br/>
+  <a href="https://haileyngo.vercel.app/" target="_blank">haileyngo.dev</a>
+</h2>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+<br/>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<center>
 
-## React Compiler
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![ReactRouter](https://img.shields.io/badge/reactrouter-%2320232a.svg?style=for-the-badge&logo=reactrouter&logoColor=%%23CA4245)
+![Tailwind](https://img.shields.io/badge/tailwind-%2320232a.svg?style=for-the-badge&logo=tailwindcss&logoColor=%2306B6D4)
+![Git](https://img.shields.io/badge/git-%2320232a.svg?style=for-the-badge&logo=git&logoColor=%23F05032)
+![Figma](https://img.shields.io/badge/figma-%23ffffff.svg?style=for-the-badge&logo=figma&logoColor=black)
+![Vercel](https://img.shields.io/badge/vercel-%23ffffff.svg?style=for-the-badge&logo=vercel&logoColor=black)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Built With
+
+My journal-inspired portfolio <a href="https://haileyngo.vercel.app/" target="_blank">haileyngo.dev</a>, which features some of my GitHub projects as well as my resume and technical skills.<br/>
+
+This project was built using these technologies.
+
+- React
+- React Router
+- Taiwind CSS
+- JavaScript
+- Git
+- Figma
+- VsCode
+- Vercel
+  
+
+## 🚀 Features
+
+**📖 Supported multi-page layout**
+
+**🎨 Designed and styled with Figma and Tailwind CSS**
+
+**👆 Provided interactive experience** 
